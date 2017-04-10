@@ -1,0 +1,43 @@
+React is FE libraries
+Used for handling View
+Allows to create reusable UI components
+
+
+JSX - JavaScript Syntax Extension.
+Babel - allow us to use next generation JS.
+
+JavaScript Expressions can be used inside of JSX using curly braces.
+Like { 1 + 1 }
+
+You can't use other expressions like if..else loop inside JSX but can be done using something else.
+
+React recommend inline style using camelCasing syntax. It will also automatically append 'px' after the number value.
+
+
+
+HOME WORK:
+
+ES6: https://leanpub.com/understandinges6/read
+
+REACT JS: https://www.udemy.com/react-redux/learn/v4/overview
+
+Redux: 
+	http://redux.js.org/
+	https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app
+	https://www.codementor.io/reactjs/tutorial/intro-to-react-redux-pros
+	https://css-tricks.com/learning-react-redux/
+	https://medium.com/@stowball/a-dummys-guide-to-redux-and-thunk-in-react-d8904a7005d3
+	https://www.toptal.com/react/react-redux-and-immutablejs
+
+	Practical:
+	https://onsen.io/blog/react-state-management-redux-store/
+
+	Quora:
+	https://www.quora.com/What-is-Redux-and-who-uses-it
+
+
+WEBPACK:
+	https://medium.com/@rajaraodv/webpack-the-confusing-parts-58712f8fcad9
+
+Native:
+	https://nativebase.io/
