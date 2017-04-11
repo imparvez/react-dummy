@@ -5,19 +5,25 @@ class App extends React.Component {
 	constructor(){
 		super();
 
-		this.findDOMNodeHandler = this.findDOMNodeHandler.bind(this);
+		this.state = {
+			data: 'HELLO',
+		}
+
+		this.updateState = this.updateState.bind(this);
 	}
 
-	findDOMNodeHandler(){
-		var myDiv = document.getElementById('myDiv');
-		ReactDOM.findDOMNode(myDiv).style.color = 'green';
+	updateState(e){
+		console.log(e);
+		this.setState({
+			data: e.target.value
+		});
 	}
 
    render() {
       return (
          <div>
-            <button onClick={this.findDOMNodeHandler}>FIND DOM NODE</button>
-            <div id="myDiv">NODE</div>
+            <input type="text" onChange={this.updateState} value={this.state.data}/>
+            <h1>{this.state.data}</h1>
          </div>
       );
    }
