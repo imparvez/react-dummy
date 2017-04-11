@@ -14,19 +14,16 @@ class App extends React.Component {
 	}
 
 	updateState(e){
-		console.log(e);
 		this.setState({
-			data: e.target.value
-		});
+			data: 'On Click Event Updated',
+		})
 	}
 
    render() {
       return (
          <div>
-         	<Form 
-         		myDataProp={this.state.data} 
-         		updateStateProp = {this.updateState} 
-         	/>
+         	<button onClick={this.updateState}>Click Me</button>
+         	<h1>{this.state.data}</h1>
          </div>
       );
    }
