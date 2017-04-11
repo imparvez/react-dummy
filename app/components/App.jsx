@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Form from './form.jsx';
 
 class App extends React.Component {
 	constructor(){
@@ -22,8 +23,10 @@ class App extends React.Component {
    render() {
       return (
          <div>
-            <input type="text" onChange={this.updateState} value={this.state.data}/>
-            <h1>{this.state.data}</h1>
+         	<Form 
+         		myDataProp={this.state.data} 
+         		updateStateProp = {this.updateState} 
+         	/>
          </div>
       );
    }
