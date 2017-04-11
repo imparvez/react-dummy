@@ -5,11 +5,10 @@ export default class Form extends React.Component{
 	render() {
       return (
          <div>
-            <input 
-            	type = "text" 
-            	value = {this.props.myDataProp} 
-               	onChange = {this.props.updateStateProp} />
-            <h3>{this.props.myDataProp}</h3>
+            <button
+            	onClick = {this.props.clickEvent}
+            >CLICK ME</button>
+            <h3>{this.props.myDataProps}</h3>
          </div>
       );
    }
